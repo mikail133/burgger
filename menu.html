@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastFood Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            color: #FF6347;
+        }
+        .menu-item {
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #FF6347;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>FastFood Menu</h1>
+    <div class="menu-item">
+        <strong>Cheeseburger</strong> - $5
+        <button onclick="orderItem('Cheeseburger')">Order</button>
+    </div>
+    <div class="menu-item">
+        <strong>Double Burger</strong> - $7
+        <button onclick="orderItem('Double Burger')">Order</button>
+    </div>
+    <div class="menu-item">
+        <strong>Coke</strong> - $2
+        <button onclick="orderItem('Coke')">Order</button>
+    </div>
+    <div class="menu-item">
+        <strong>Sprite</strong> - $2
+        <button onclick="orderItem('Sprite')">Order</button>
+    </div>
+
+    <script>
+        function orderItem(item) {
+            alert('You ordered: ' + item);
+        }
+    </script>
+</body>
+</html>
 
